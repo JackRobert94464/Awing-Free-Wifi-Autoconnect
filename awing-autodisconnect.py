@@ -17,7 +17,7 @@ from pyppeteer import launch
 async def main():
     # Launch a browser instance
     browser = await launch(
-        headless=False
+        headless=False, slowMo=50
     )
     # Create a new page
     page = await browser.newPage()
